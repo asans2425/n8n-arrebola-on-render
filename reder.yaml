@@ -6,4 +6,14 @@ services:
     plan: free
     repo: https://github.com/asans2425/n8n-on-render
     dockerfilePath: ./Dockerfile
-    
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: admin08
+      - key: GENERIC_TIMEZONE
+        value: Europe/Madrid
+      - key: N8N_HOST
+        value: 0.0.0.0
